@@ -39,7 +39,6 @@ public class User {
     }
     
     public String getNameUpperCase(){
-    	//TODO ...
-    	return "CARLOS";
+    	return this.name.toUpperCase();
     	}
 }
