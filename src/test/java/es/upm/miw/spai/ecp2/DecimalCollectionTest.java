@@ -39,4 +39,9 @@ public class DecimalCollectionTest {
         assertEquals(5.1d, decimalCollection.higher(), 10e-5);
     }
     
+    @Test
+    public void testMultiplication(){
+    	assertEquals(2.2, decimalCollection.menor(), 10e-5);
+    }
+    
 }
