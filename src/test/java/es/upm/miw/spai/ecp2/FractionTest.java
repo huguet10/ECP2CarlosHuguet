@@ -1,6 +1,7 @@
 package es.upm.miw.spai.ecp2;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -39,5 +40,18 @@ public class FractionTest {
         assertEquals(45, resultado.getNumerator());
         assertEquals(18, resultado.getDenominator());
     }
+    
+    @Test
+    public void testMenor() {
+    	Fraction fr2 = new Fraction(50,5);
+    	assertTrue(fraction.menor(fr2));
+    }
 
+    @Test
+    public void testMayor() {
+    	Fraction fr2 = new Fraction(10,5);
+    	assertTrue(fraction.mayor(fr2));
+    	
+    }
+    
 }

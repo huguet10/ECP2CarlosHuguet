@@ -76,4 +76,12 @@ public class Fraction {
         resultado = new Fraction(numeradorSuma, denominadorComun);
         return resultado;
     }
+    
+    public boolean menor(Fraction fr){    	
+    	return (double) this.numerator/this.denominator < (double) fr.numerator/fr.denominator;
+    	}
+
+    	public boolean mayor(Fraction fr){
+    		return (double) this.numerator/this.denominator > (double) fr.numerator/fr.denominator;
+    	}
 }
