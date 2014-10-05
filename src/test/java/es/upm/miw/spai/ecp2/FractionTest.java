@@ -32,4 +32,12 @@ public class FractionTest {
         assertEquals(2.333333333d, fraction.decimal(), 10e-5);
     }
 
+    @Test
+    public void testSuma() {
+        Fraction fr2 = new Fraction(1, 6);
+        FractionTest resultado = fraction.suma(fr2);
+        assertEquals(45, resultado.getNumerator());
+        assertEquals(18, resultado.getDenominator());
+    }
+
 }
