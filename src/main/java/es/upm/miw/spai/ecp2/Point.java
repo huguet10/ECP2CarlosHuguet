@@ -43,5 +43,7 @@ public class Point {
     }
 
     public void changeCoords(int x, int y){
+    	this.x=x;
+    	this.y=y;
     }
 }
