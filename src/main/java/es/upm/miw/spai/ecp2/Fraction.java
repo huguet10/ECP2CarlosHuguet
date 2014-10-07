@@ -79,9 +79,17 @@ public class Fraction {
     
     public boolean menor(Fraction fr){    	
     	return (double) this.numerator/this.denominator < (double) fr.numerator/fr.denominator;
-    	}
+    }
 
-    	public boolean mayor(Fraction fr){
-    		return (double) this.numerator/this.denominator > (double) fr.numerator/fr.denominator;
-    	}
+	public boolean mayor(Fraction fr){
+		return (double) this.numerator/this.denominator > (double) fr.numerator/fr.denominator;
+	}
+	
+	public boolean isPropia(){
+		return this.numerator < this.denominator;
+	}
+
+	public boolean isImpropia(){
+		return !this.isPropia();
+	}
 }
