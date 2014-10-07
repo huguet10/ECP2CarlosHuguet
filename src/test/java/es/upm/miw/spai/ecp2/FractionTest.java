@@ -54,4 +54,14 @@ public class FractionTest {
     	
     }
     
+    @Test
+    public void testIsPropia(){
+    	assertEquals(false, fraction.isPropia());
+    }
+    
+    @Test
+    public void testIsImpropia(){
+    	assertEquals(true, fraction.isImpropia());
+    }
+    
 }
