@@ -34,10 +34,14 @@ public class DecimalCollection {
         }
         return higher;
     }
-    
+
     public Double menor(){
-		//TODO ...
-		return null;
-	}
+		    double menor = Double.POSITIVE_INFINITY;
+        for(double item : this.collection) {
+            if(item < menor)
+                menor = item;
+        }
+        return menor;
+	  }
 
 }
